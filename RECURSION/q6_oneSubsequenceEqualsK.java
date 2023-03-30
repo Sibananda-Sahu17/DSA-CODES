@@ -16,6 +16,7 @@ public class q6_oneSubsequenceEqualsK {
         System.out.println(ans);
     }
     public static Boolean helper(int[] arr, int i, List<Integer> ans, int k, int sum){
+        
         if(i>=arr.length){
             if(k==sum){
                 return true;
