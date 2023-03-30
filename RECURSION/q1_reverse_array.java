@@ -25,7 +25,7 @@ public class q1_reverse_array {
         // swap(arr[l], arr[r]);
 
         // ------OR-----------
-
+        
         int temp = arr[l];
         arr[l] = arr[r];
         arr[r] = temp;
