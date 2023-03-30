@@ -23,6 +23,7 @@ public class q7_numOfSubsequenceEqualsK {
         sum-=arr[i];
 
         int r = countSubsequenceEqualsK(arr, i+1, k, sum);
+        
         return l+r;
     }
 }
