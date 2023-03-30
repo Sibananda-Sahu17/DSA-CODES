@@ -7,8 +7,7 @@ public class powerXn {
         int n = sc.nextInt();
         int ans = power(x, n);
         System.out.println(x+"^"+n+" is "+ans);
-    }
-    
+    }    
     public static int power(int x, int n){
         if(n==0) return 1;
         // return x*power(x, n-1);
