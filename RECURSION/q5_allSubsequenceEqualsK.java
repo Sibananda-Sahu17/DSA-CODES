@@ -7,6 +7,7 @@ public class q5_allSubsequenceEqualsK {
         for(int i=0; i<n; i++){
             arr[i] = sc.nextInt();
         }
+        
         List<List<Integer>> ans = new ArrayList<>();
         List<Integer> subset = new ArrayList<>();
         int sum = 0;
