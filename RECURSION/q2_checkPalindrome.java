@@ -7,8 +7,7 @@ public class q2_check_palindrome_string {
     }
 
     public static boolean checkPalindrome(int i, String s){
-        int n = s.length();
-        
+        int n = s.length();        
         if(i>=n/2) return true;
         if(s.charAt(i)!=s.charAt(n-i-1)) return false;
         return checkPalindrome(i+1, s);
