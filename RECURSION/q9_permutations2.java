@@ -28,6 +28,7 @@ public class q9_permutations2 {
         HashSet<Integer> set = new HashSet<>();
         for(int i = pos; i<nums.length; i++){
             if(set.contains(nums[i])) continue;
+
             set.add(nums[i]);
             swap(nums, i, pos);
             permutation(nums, pos+1, ans, perm);
