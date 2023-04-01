@@ -9,6 +9,7 @@ public class q18_generateParanthesis {
 
         System.out.println(ans);
     }
+    
     public static void paranthesis(int n, ArrayList<String> ans, String s, int open , int close){
         if(s.length()==n*2){
             ans.add(s);
