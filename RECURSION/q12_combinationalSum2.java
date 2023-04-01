@@ -31,7 +31,7 @@ public class q12_combinationalSum2 {
 
             sublist.add(candidates[i]);
             combinationSum2(i+1, target-candidates[i], candidates, ans, sublist);
-            sublist.remove(sublist.size()-1);
+            sublist.remove(sublist.size()-1);            
         }
     } 
 }
