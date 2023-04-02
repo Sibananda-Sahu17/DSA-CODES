@@ -21,9 +21,9 @@ class Solution {
         st.push(root);
         while(!st.isEmpty()){
             root = st.pop();
-            ans.add(root.val);
-            if(root.right!=null) st.push(root.right);
+            ans.add(root);
             if(root.left!=null) st.push(root.left);
+            if(root.right!=null) st.push(root.right); 
         }
         return ans;
     }
