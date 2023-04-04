@@ -1,0 +1,33 @@
+/*
+class Node{
+    int data;
+    Node left,right;
+    Node(int d){
+        data=d;
+        left=right=null;
+    }
+}
+
+*/
+class Tree{
+    public ArrayList<ArrayList<Integer>> Paths(Node root){
+        ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
+        if(root==null) return ans;
+        ArrayList<Integer> sublist = new ArrayList<>();
+        getPath(root, ans, sublist);
+        return ans;
+    }
+    public void getPath(Node root, ArrayList<ArrayList<Integer>> ans, ArrayList<Integer> sublist){
+        if(root==null) return;
+        sublist.add(root.data);
+        if(root.left==null && root.right==null){
+            ans.add(new ArrayList<>(sublist));
+            sublist.remove(sublist.size()-1);
+            return;
+        } 
+        getPath(root.left, ans, sublist);
+        getPath(root.right, ans, sublist);
+        sublist.remove(sublist.size()-1);
+        return;
+    }    
+}
